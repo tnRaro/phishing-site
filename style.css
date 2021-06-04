@@ -1,0 +1,108 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.box {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+.vstack {
+  flex-direction: column;
+}
+.hstack {
+  flex-direction: row;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.p16 {
+  padding: 1rem;
+}
+.r16 {
+  border-radius: 1rem;
+}
+.gap8 {
+  gap: 0.5rem;
+}
+.b {
+  border: 1px solid gainsboro;
+}
+.bg-gradient {
+  background: linear-gradient(90deg, deeppink, orangered);
+}
+.container {
+  height: 100vh;
+}
+.dangerous {
+  font-weight: 700;
+}
+.dangerous:hover {
+  background: linear-gradient(90deg, deeppink, orangered);
+  color: darkred;
+  border-color: orange;
+}
+.ring {
+  outline: none;
+}
+.ring:hover,
+.ring:active,
+.ring:focus {
+  box-shadow: 0 0 0 3px orange;
+}
+.ease-out {
+  transition: all 0.3s ease-out;
+}
+.text-gradient {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.w530 {
+  width: 530px;
+}
+.header {
+  white-space: nowrap;
+  animation-duration: 2s;
+  animation-name: text-transform;
+  animation-iteration-count: infinite;
+  -webkit-text-stroke: orangered thin;
+  z-index: -1;
+}
+@keyframes text-transform {
+  0% {
+    text-transform: capitalize;
+  }
+  5% {
+    text-transform: lowercase;
+  }
+  10% {
+    text-transform: none;
+  }
+  15% {
+    text-transform: uppercase;
+  }
+  42% {
+    -webkit-text-security: none;
+  }
+  47% {
+    -webkit-text-security: circle;
+  }
+  52% {
+    -webkit-text-security: square;
+  }
+  57% {
+    -webkit-text-security: none;
+  }
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
