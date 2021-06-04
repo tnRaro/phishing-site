@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./app.com -p 80 -d&
+./bin/app.com -p 80 -d&
